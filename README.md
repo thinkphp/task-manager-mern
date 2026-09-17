@@ -1,5 +1,12 @@
 # Tasks-React-Express-MongoDB
 
+```
+#!/bin/bash
+mkdir -p "$1"/{models,controllers,routes}
+touch "$1"/models/Task.js "$1"/controllers/tasksController.js "$1"/routes/tasks.js "$1"/db.js "$1"/server.js "$1"/.env
+cd "$1" && npm init -y && npm install express mongoose dotenv
+echo "Backend creat în ./$1"
+```
 A Todo List application built on the MERN stack: **MongoDB**, **Express**, **React**, and **Node.js**.
 
 Tasks are persisted in a MongoDB database, accessed through a REST API written in Express, and displayed/managed from a React interface.
